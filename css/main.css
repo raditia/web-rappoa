@@ -9,9 +9,6 @@ a {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 50px;
 }
-.carousel-caption {
-
-}
 
 .jumbotron {
     background-size: cover;
@@ -33,6 +30,19 @@ a {
 .header-misi {
     font-size: 64px;
     text-align: left;
+}
+
+.header-home {
+    font-size: 72px;
+    text-align: center;
+}
+
+.text-home {
+    text-align: center;
+    line-height: 2.5;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 20px;
 }
 
 .text-misi {
@@ -67,6 +77,25 @@ a {
     box-shadow: 1px 9px 4px 0 rgba(119, 151, 178, 0.16);
 }
 
+.btn-modal {
+    border-radius: 100px;
+    background-color: #225D97;
+    color: #ffffff;
+    padding: 5px 30px 5px 30px;
+}
+
+.btn-tutup {
+    border-radius: 100px;
+    border-color: #225D97;
+    background-color: #ffffff;
+    color: #4F4F4F;
+    padding: 5px 30px 5px 30px;
+}
+
+.lapor-footer {
+    float: right;
+}
+
 span {
     display: inline-block;
     width: 70px;
@@ -92,7 +121,7 @@ span {
 
 .events_wrapper .events .event.active {
     z-index: 2;
-    -webkit-box-shadow: 088px155px rgba(0,0,0,18);
+    -webkit-box-shadow: 088px 155px rgba(0,0,0,18);
     box-shadow: 0 8px 15px rgba(0,0,0,.1);
     transition: .2s ease;
     visibility: visible;
@@ -119,7 +148,5 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 50% 50%;*/
+    background-repeat: no-repeat;
 }

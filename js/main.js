@@ -1,10 +1,3 @@
-$(document).ready(function() {
-    AOS.init( {
-        // uncomment below for on-scroll animations to played only once
-        // once: true
-    }); // initialize animate on scroll library
-});
-
 // Smooth scroll for links with hashes
 $('a.smooth-scroll')
     .click(function(event) {
@@ -40,26 +33,26 @@ $('a.smooth-scroll')
     });
 
 // Change navbar text color on certain section
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var light_pos = $('#visimisi').offset().top;
-        var light_height = $('#visimisi').height();
-        var menu_pos = $('.NavigationButton').offset().top;
-        var menu_height = $('.NavigationButton').height();
-        var scroll = $(window).scrollTop();
-        console.log('light',light_pos);
-        console.log('menu',menu_pos);
-        console.log('scroll',scroll);
+window.onscroll = () => {
+    const nav = document.querySelector('#navbar');
+    if(this.scrollY > 300) {
+        $('.NavigationButton').addClass('menu_black');
+        $('.NavigationButton').removeClass('menu_white');
+    }
+    else {
+        $('.NavigationButton').removeClass('menu_black');
+        $('.NavigationButton').addClass('menu_white');
+    }
+};
 
-        if(menu_pos > light_pos && menu_pos < (light_pos + light_height)) {
-            $('.NavigationButton').addClass('menu_black');
-            $('.NavigationButton').removeClass('menu_white');
-        }
-        else {
-            $('.NavigationButton').removeClass('menu_black');
-            $('.NavigationButton').addClass('menu_white');
-        }
+// Tambah Identitas
+function tambahIdentitas() {
+    document.getElementById('tambahIdentitas').style.display = "block";
+    document.getElementById('buttonIdentitas').style.display = "none";
+}
 
-    })
-})
-
+// Tutup Tambah Identitas
+function tutupTambahIdentitas() {
+    document.getElementById('tambahIdentitas').style.display = "none";
+    document.getElementById('buttonIdentitas').style.display = "block";
+}
