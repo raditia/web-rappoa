@@ -14,6 +14,7 @@ a {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 30px;
+    height: 50px;
 }
 
 .navbar-expand-lg.scrolled {
@@ -96,6 +97,10 @@ a {
 
 .potensi-desa {
     padding-top: 150px;
+}
+
+.padding-section {
+    padding-top: 100px;
 }
 
 .lapor-footer {
