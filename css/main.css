@@ -1,3 +1,9 @@
+body {
+    /*padding: 50px;*/
+    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+    font: 14px "Open Sans";
+}
+
 a {
     font-family: "Open Sans";
     font-style: normal;
@@ -7,7 +13,12 @@ a {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 50px;
+    padding-right: 30px;
+}
+
+.navbar-expand-lg.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
 }
 
 .jumbotron {
@@ -16,33 +27,37 @@ a {
 }
 
 .header-visi {
-    font-size: 64px;
-    text-align: right;
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
 }
 
 .text-visi {
-    text-align: right;
+    text-align: left;
     line-height: 2.5;
     font-family: "Open Sans";
     font-weight: lighter;
 }
 
 .header-misi {
-    font-size: 64px;
+    font-size: 48px;
     text-align: left;
 }
 
 .header-home {
-    font-size: 72px;
+    font-size: 144px;
     text-align: center;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 150px;
 }
 
 .text-home {
     text-align: center;
-    line-height: 2.5;
+    /* line-height: 1.5; */
     font-family: "Open Sans";
-    font-weight: normal;
-    font-size: 20px;
+    font-weight: lighter;
+    font-size: 24px;
 }
 
 .text-misi {
@@ -70,26 +85,17 @@ a {
     color: #0F2235;
 }
 
-.btn-lapor {
+.btn-lainnya {
     border-radius: 100px;
-    background-color: #225D97;
+    background-color: #26597F;
     color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 1px 9px 4px 0 rgba(119, 151, 178, 0.16);
 }
 
-.btn-modal {
-    border-radius: 100px;
-    background-color: #225D97;
-    color: #ffffff;
-    padding: 5px 30px 5px 30px;
-}
-
-.btn-tutup {
-    border-radius: 100px;
-    border-color: #225D97;
-    background-color: #ffffff;
-    color: #4F4F4F;
-    padding: 5px 30px 5px 30px;
+.potensi-desa {
+    padding-top: 150px;
 }
 
 .lapor-footer {
@@ -102,6 +108,12 @@ span {
     height: 70px;
     margin: 6px;
     background-color: #555;
+}
+
+.title {
+    font-size: 144px;
+    padding-left: 70px;
+    padding-top: 100px;
 }
 
 .events_wrapper {
@@ -144,9 +156,14 @@ span {
 
 /*FOOTER*/
 footer {
-    background: url(../images/footer.png);
+    background-color: #26597F;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     background-repeat: no-repeat;
+}
+
+.footer-rappoa {
+    color: #fff;
+    font-weight: lighter;
 }

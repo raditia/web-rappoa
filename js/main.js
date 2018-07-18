@@ -32,10 +32,25 @@ $('a.smooth-scroll')
         }
     });
 
+// $('a[href*=#]:not([href=#])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+//         || location.hostname == this.hostname) {
+      
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 1000);
+//         return false;
+//       }
+//     }
+//   });
+
 // Change navbar text color on certain section
 window.onscroll = () => {
     const nav = document.querySelector('#navbar');
-    if(this.scrollY > 300) {
+    if(this.scrollY > 100) {
         $('.NavigationButton').addClass('menu_black');
         $('.NavigationButton').removeClass('menu_white');
     }
@@ -44,6 +59,13 @@ window.onscroll = () => {
         $('.NavigationButton').addClass('menu_white');
     }
 };
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navbar-expand-lg");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
 
 // Tambah Identitas
 function tambahIdentitas() {
