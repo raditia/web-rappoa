@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width", initial-scale=1>
   <meta name="description" content="Website Resmi Desa Rappoa">
   <meta name="author" content="KKN-PPM UGM 2018 Desa Rappoa">
   <title>Website Resmi Desa Rappoa</title>
@@ -114,10 +114,14 @@
             <div class="col-md-1"></div>
             <div class="col-md-5">
               <h1 class="header-visi">PROFIL</h1>
-              <p class="text-visi">Desa Rappoa adalah salah satu desa yang terletak di Kecamatan Pa’jukukang, Kabupaten Bantaeng, 
-                Sulawesi Selatan.
-                Nama Rappoa diambil dari kata Rappo, yang berarti pohon Pinang dalam Bahasa Makassar. Nama ini diberikan
-                karena pada daerah tersebut terdapat banyak pohon pinang yang tumbuh subur dan sangat bermanfaat bagi masyarakat.
+              <p class="text-visi">Desa Rappoa adalah salah satu desa yang terletak di Kecamatan Paíjukukang, 
+                Kabupaten Bantaeng, Sulawesi Selatan. 
+                Nama Rappoa diambil dari kata Rappo, yang berarti pohon Pinang dalam Bahasa Makassar. 
+                Nama ini diberikan karena pada daerah tersebut terdapat banyak pohon pinang yang tumbuh subur dan 
+                sangat bermanfaat bagi masyarakat. 
+                Desa ini terkenal sebagai desa percontohan transparansi dana di Indonesia dengan luas wilayah 3,4 km/persegi. 
+                Terbentuk sejak tahun 1997 melalui Perda No. 6 Tahun 2007, 
+                Rappoa memiliki 5 Dusun yaitu Tonrokassi, Sapa-sapa, Rappoa, Bo'dong, dan Kampong Toa.
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -205,21 +209,29 @@
             <div class="carousel-item active">
               <h1 class="header-visi">RUMPUT LAUT</h1>
               <hr>
-              <p class="text-visi">Petani Rumput Laut merupakan salah satu mata pencaharian terbesar di Desa Rappoa. 
-                terdapat kurang lebih 400
-                keluarga yang tersebar di seluruh Desa Rappoa. Penghasilan ini masuk ke blablabal Desa Rappoa adalah salah
-                satu desa yang terletak di Kecamatan Pa’jukukang, Kabupaten Bantaeng, Sulawesi Selatan. Nama Rappoa diambil
-                dari kata Rappo, yang berrarti pohon Pinang dalam Bahasa Makassar. </p>
+              <p class="text-visi">Desa Rappoa terletak di wilayah pesisir pantai sehingga sebagian besar masyarakatnya adalah 
+                seorang nelayan dan petani rumput laut. 
+                Dengan waktu panen 40 hari setelah pembibitan, hasil panen rumput laut dapat mencapai berat 200 - 700 kg sekali 
+                panen.  Ada dua jenis rumput laut yang dihasilkan, yaitu Euchema Spinosum dan Euchema Cottonii. 
+                Kedua jenis rumput laut ini bahkan telah di ekspor ke luar Makassar seperti Surabaya, China, Jepang, dan Singapura. 
+                Selain rumput laut, banyak pula warga yang merupakan seorang nelayan. </p>
             </div>
             <div class="carousel-item">
-              <h1 class="header-visi">RUMPUT DARAT</h1>
+              <h1 class="header-visi">PERTANIAN</h1>
               <hr>
-              <p class="text-visi">Petani Rumput Laut merupakan salah satu mata pencaharian terbesar di Desa Rappoa. 
-                terdapat kurang lebih 400
-                keluarga yang tersebar di seluruh Desa Rappoa. Penghasilan ini masuk ke blablabal Desa Rappoa adalah salah
-                satu desa yang terletak di Kecamatan Pa’jukukang, Kabupaten Bantaeng, Sulawesi Selatan. Nama Rappoa diambil
-                dari kata Rappo, yang berrarti pohon Pinang dalam Bahasa Makassar. </p>
+              <p class="text-visi">Desa Rappoa memiliki lahan pertanian yang sangat luas, pusatnya terletak di Kampong Toa. 
+                Mengusung metode pertanian alami, juga didukung oleh irigasi yang baik, 
+                Desa Rappoa berhasil menghasilkan hasil panen berkualitas hingga tiga kali panen dalam setahun. 
+                Selain padi, hasil tani Desa Rappoa juga terdapat melon organik, lombok, tomat, dan beras merah. </p>
             </div>
+            <div class="carousel-item">
+                <h1 class="header-visi">PERTERNAKAN</h1>
+                <hr>
+                <p class="text-visi">Kabupaten Bantaeng terkenal unggul akan seminasi buatannya, tak terkecuali di Desa Rappoa. 
+                  Selain unggul di bidang Pertanian dan Rumput lautnya, Desa Rappoa juga dikenal unggul di bidang peternakannya. 
+                  Dengan seminasi buatan, peternak-peternak di desa dapat menghasilkan sapi-sapi unggul. 
+                  Tak hanya sapi, di Desa Rappoa juga terdapat peternak kambing dan ayam. </p>
+              </div>
           </div>
           <a class="carousel-control-prev" href="#carouselPotensi" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -329,17 +341,30 @@
     var myChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: [
+          "Gaji & Tunjangan Perangkat Desa", 
+          "Operasional Kantor", 
+          "Operasional BPD", 
+          "Operasional RT/RW", 
+          "Pendataan Penduduk", 
+          "Penetapan Perencanaan Desa",
+          "Kegiatan Pembinaan  Ketentraman dan Ketertiban",
+          "Kegiatan Pembinaan Kerukunan Umat Beragama",
+          "Kegiatan Pemuda dan Olahraga"
+          ],
         datasets: [{
           label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
+          data: [237000000, 83303000, 4595000, 28800000, 3000000, 22925000, 31800000, 36590000, 6000000],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
             'rgba(255, 206, 86, 0.2)',
             'rgba(75, 192, 192, 0.2)',
             'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(127, 77, 76, 0.2)',
+            'rgba(27, 211, 238, 0.2)',
+            'rgba(234, 28, 238, 0.2)'
           ],
           borderColor: [
             'rgba(255,99,132,1)',
@@ -347,7 +372,10 @@
             'rgba(255, 206, 86, 1)',
             'rgba(75, 192, 192, 1)',
             'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            'rgba(255, 159, 64, 1)',
+            'rgba(127, 77, 76, 1)',
+            'rgba(27, 211, 238, 1)',
+            'rgba(234, 28, 238, 1)'
           ],
           borderWidth: 1
         }]
